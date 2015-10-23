@@ -15,6 +15,7 @@ echo 'export PATH=$PATH:$GOPATH/bin:$GOROOT/bin' >> /.bashrc \
 echo 'export GOROOT=/usr/local/go'
 
 VOLUME /gopath
+ENV GOVERSION 1.5.1
 ENV GOROOT /usr/local/go
 ENV GOPATH /gopath
 ENV PATH $PATH:$GOPATH/bin:$GOROOT/bin

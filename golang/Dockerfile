@@ -6,7 +6,7 @@ ADD sources.list /etc/apt/
 
 RUN apt-get update && apt-get install -y git wget
 
-RUN wget http://7rf3a1.com1.z0.glb.clouddn.com/go1.5.1.linux-amd64.tar.gz
+RUN wget -q http://7rf3a1.com1.z0.glb.clouddn.com/go1.5.1.linux-amd64.tar.gz
 
 RUN tar -xf go1.5.1.linux-amd64.tar.gz -C /usr/local
 

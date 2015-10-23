@@ -10,9 +10,9 @@ RUN wget -q http://7rf3a1.com1.z0.glb.clouddn.com/go1.5.1.linux-amd64.tar.gz
 
 RUN tar -xf go1.5.1.linux-amd64.tar.gz -C /usr/local
 
-RUN echo 'export GOPATH=/gopath' >> /.bashrc && \
-echo 'export PATH=$PATH:$GOPATH/bin:$GOROOT/bin' >> /.bashrc \
-echo 'export GOROOT=/usr/local/go' >> /.bashrc
+RUN echo 'export GOPATH=/gopath' >> ~/.bashrc && \
+echo 'export PATH=$PATH:$GOPATH/bin:$GOROOT/bin' >> ～/.bashrc && \
+echo 'export GOROOT=/usr/local/go' >> ~/.bashrc
 
 VOLUME /gopath
 ENV GOVERSION 1.5.1

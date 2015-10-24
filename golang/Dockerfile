@@ -17,6 +17,10 @@ RUN echo 'export GOPATH=/gopath' >> /etc/profile && \
 echo 'export PATH=$PATH:$GOPATH/bin:$GOROOT/bin' >> /etc/profile && \
 echo 'export GOROOT=/usr/local/go' >> /etc/profile
 
+RUN echo 'export GOPATH=/gopath' >> /root/.bash_profile && \
+echo 'export PATH=$PATH:$GOPATH/bin:$GOROOT/bin' >> /root/.bash_profile && \
+echo 'export GOROOT=/usr/local/go' >> /root/.bash_profile
+
 VOLUME /gopath
 ENV GOVERSION 1.5.1
 ENV GOROOT /usr/local/go

@@ -1,4 +1,4 @@
-FROM index.tenxcloud.com/tenxcloud/ubuntu:trusty
+FROM index.tenxcloud.com/tenxcloud/ubuntu
 MAINTAINER 杜龙少 sdvdxl@163.com
 
 RUN echo 'Asia/Shanghai' > /etc/timezone

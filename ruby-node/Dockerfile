@@ -1,4 +1,4 @@
-FROM index.tenxcloud.com/tenxcloud/debian:jessie
+FROM index.tenxcloud.com/docker_library/buildpack-deps
 
 ENV RUBY_MAJOR 2.2
 ENV RUBY_VERSION 2.2.4

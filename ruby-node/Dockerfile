@@ -1,4 +1,4 @@
-FROM index.tenxcloud.com/docker_library/buildpack-deps
+FROM index.tenxcloud.com/docker_library/ruby
 
 ENV RUBY_MAJOR 2.2
 ENV RUBY_VERSION 2.2.4
